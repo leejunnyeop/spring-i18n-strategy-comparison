@@ -1,0 +1,16 @@
+package com.example.i18n.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.Locale;
+
+@Controller
+public class WriteController {
+
+    @GetMapping("/write")
+    public String showWritePage(Model model, Locale locale) {
+        return "write"; // templates/write.html 렌더링
+    }
+}
